@@ -8,11 +8,11 @@ Integrantes:
 
 
 
-## 1. Arquitectura
+# 1. Arquitectura
 
 ![DOCKER](https://github.com/memoodm/tallerMVA/blob/master/images/ImgArquitectura.png)
 
-### Decisiones de Arquitectura
+## Decisiones de Arquitectura
 	- DEC001 Servicio basado en el patrón intermediate Routing:
 	- DEC002 Uso de FUSE como Broker
 	- DEC003 Uso de Docker para contenerización de servicios
@@ -48,7 +48,7 @@ Problema: Como construir todo un API rápidamente y ver exactamente como se ve y
 Solución: RAML permite usar un formato genérico y entendible que permite a cualquiera ver la documentación de los cambios.
 
   
-## 2. Artefactos del proyecto
+# 2. Artefactos del proyecto
 | Artefacto | Descripcion | Contenedor | Tipo | Port |
 | ------ | ------ | ------ | ------ | ------ |
 | apache-camel-jaxrs | Logica del bus, la cual realiza la coreografia de servicios | jbossFuse | jar | 9000
@@ -58,7 +58,7 @@ Solución: RAML permite usar un formato genérico y entendible que permite a cua
 | W1-REST-Service | servicio que expone un end point en rest | docker | docker | 8081
 | W1-SOAP-Service | servicio que expone un end point en soap | docker | docker | 8082
 
-## 3. Servidores del proyecto
+# 3. Servidores del proyecto
 
 | Servidor | Version | Link |
 | ------ | ------ | ------ |
@@ -68,7 +68,7 @@ Solución: RAML permite usar un formato genérico y entendible que permite a cua
 
 
 
-## 3. Project start
+# 4. Project start
 
 Ejecutar el archivo de comando:
 ```sh
@@ -86,7 +86,7 @@ docker run -d -p 8082:8080 memoodm/services:service_2_soap
 docker run -d -p 8888:8080 memoodm/services:Routing
 ```
 
-## 4. Descripcion de start
+# 5. Descripcion de start
 Inicia el servidor de jboss, el cual incluye el artefacto de apache camel
 ```sh
 start servers\jboss-fuse-6.3.0.redhat-187\bin\fuse.bat
