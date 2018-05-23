@@ -6,9 +6,12 @@ Integrantes:
 - Federico Urbina
 - Omar Noriega
 
+
+
+## 1. Arquitectura
+
 ![DOCKER](https://github.com/memoodm/tallerMVA/blob/master/images/ImgArquitectura.png)
 
-## Arquitectura
 ### Decisiones de Arquitectura
 	- DEC001 Servicio basado en el patrón intermediate Routing:
 	- DEC002 Uso de FUSE como Broker
@@ -44,11 +47,8 @@ Solución: Los servicios pueden ser agrupados en inventarios de servicios espec�
 Problema: Como construir todo un API rápidamente y ver exactamente como se ve y probarlo
 Solución: RAML permite usar un formato genérico y entendible que permite a cualquiera ver la documentación de los cambios.
 
-
-
-
   
-## Artefactos del proyecto
+## 2. Artefactos del proyecto
 | Artefacto | Descripcion | Contenedor | Tipo | Port |
 | ------ | ------ | ------ | ------ | ------ |
 | apache-camel-jaxrs | Logica del bus, la cual realiza la coreografia de servicios | jbossFuse | jar | 9000
@@ -58,7 +58,17 @@ Solución: RAML permite usar un formato genérico y entendible que permite a cua
 | W1-REST-Service | servicio que expone un end point en rest | docker | docker | 8081
 | W1-SOAP-Service | servicio que expone un end point en soap | docker | docker | 8082
 
-## Project start
+## 3. Servidores del proyecto
+
+| Servidor | Version | Link |
+| ------ | ------ | ------ |
+| JBoss Fuse ESB | 6.3.0 | https://developers.redhat.com/products/fuse/download/?sc_cid=701f2000000tvTBAAY&gclid=CjwKCAjwopTYBRAzEiwAnU4kb-fScsat-ciAaqvl86B1gJ9-p5gzD7eClFWvAhIVZUuW2rhKmEFtYRoCUR8QAvD_BwE&gclsrc=aw.ds |
+| GlassFish | 4.1.1 | http://www.oracle.com/technetwork/es/middleware/glassfish/overview/index.html |
+| Docker | 18.03.1-ce | https://www.docker.com/ |
+
+
+
+## 3. Project start
 
 Ejecutar el archivo de comando:
 ```sh
@@ -76,7 +86,7 @@ docker run -d -p 8082:8080 memoodm/services:service_2_soap
 docker run -d -p 8888:8080 memoodm/services:Routing
 ```
 
-## Descripcion de start
+## 4. Descripcion de start
 Inicia el servidor de jboss, el cual incluye el artefacto de apache camel
 ```sh
 start servers\jboss-fuse-6.3.0.redhat-187\bin\fuse.bat
