@@ -6,7 +6,7 @@ Integrantes:
 - Federico Urbina
 - Omar Noriega
 
-![DOCKER](https://github.com/memoodm/tallerMVA/blob/master/images/docker.jpg)
+![DOCKER](https://github.com/memoodm/tallerMVA/blob/master/images/ImgArquitectura.png)
 
 ### Arquitectura
 - Type some Markdown on the left
