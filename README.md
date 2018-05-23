@@ -9,10 +9,19 @@ Integrantes:
 ![DOCKER](https://github.com/memoodm/tallerMVA/blob/master/images/ImgArquitectura.png)
 
 ### Arquitectura
-- Type some Markdown on the left
-  - See HTML in the right
-  - Magic
-  - 
+- Decisiones de Arquitectura
+	-DEC001 Servicio basado en el patrón intermediate Routing:
+	 -Problema: Dado lo compleja que puede ser la composición de los servicios, es difícil anticipar y diseñar todos los posibles escenarios en tiempo de ejecución
+	 -Solución: Usar un enrutamiento lógico intermedio para determinar las diferentes rutas de mensaje
+
+	-DEC002 Uso de FUSE como Broker
+	-DEC003 Uso de Docker para contenerización de servicios
+	-DEC004 Uso de RAML para la definición del contrato
+	-DEC005 Dispatcher usado en el API
+	-DEC006 Uso de Domain Inventory
+	-DEC007 REST como servicio único interno
+
+
   
 ### Artefactos del proyecto
 | Artefacto | Descripcion | Contenedor | Tipo | Port |
