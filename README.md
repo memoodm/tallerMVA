@@ -10,16 +10,17 @@ Integrantes:
 
 ### Arquitectura
 - Decisiones de Arquitectura
-	-DEC001 Servicio basado en el patrón intermediate Routing:
-	-DEC002 Uso de FUSE como Broker
-	-DEC003 Uso de Docker para contenerización de servicios
-	-DEC004 Uso de RAML para la definición del contrato
-	-DEC005 Dispatcher usado en el API
-	-DEC006 Uso de Domain Inventory
-	-DEC007 REST como servicio único interno
+	- DEC001 Servicio basado en el patrón intermediate Routing:
+	- DEC002 Uso de FUSE como Broker
+	- DEC003 Uso de Docker para contenerización de servicios
+	- DEC004 Uso de RAML para la definición del contrato
+	- DEC005 Dispatcher usado en el API
+	- DEC006 Uso de Domain Inventory
+	- DEC007 REST como servicio único interno
 
 - Descripcion de decisiones:
 
+DEC001 Servicio basado en el patrón intermediate Routing:
 Problema: Dado lo compleja que puede ser la composición de los servicios, es difícil anticipar y diseñar todos los posibles escenarios en tiempo de ejecución
 Solución: Usar un enrutamiento lógico intermedio para determinar las diferentes rutas de mensaje
   
