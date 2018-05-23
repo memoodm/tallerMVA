@@ -27,25 +27,44 @@ Integrantes:
 Problema -> Dado lo compleja que puede ser la composición de los servicios, es difícil anticipar y diseñar todos los posibles escenarios en tiempo de ejecución
 Solución -> Usar un enrutamiento lógico intermedio para determinar las diferentes rutas de mensaje
 
+![img1](https://github.com/memoodm/tallerMVA/blob/master/images/img01.png)
+
 ### DEC002 Uso de Fuse para realizar la composición de servicios (not just ESB)
 Problema: De que manera componer y construir servicios permitiendo el despliegue de sistemas distribuidos y permitiendo escalabilidad
 Solución: Usando Jboss fuse se refleja la flexibilidad, escalabilidad y re-usabilidad en el sistema y se aleja de la idea de manejar una integración monolítica.
+
+![img2](https://github.com/memoodm/tallerMVA/blob/master/images/img02.png)
 
 ### DEC003 Uso de Docker para contenerización de servicios
 Problema: Despliegues de soluciones monolíticas  pueden llevar a una reducción significativa del desempeño 
 Solución: Los servicios son desplegados independientemente, como unidades autónomas que son empacadas y gestionadas autonamente en imágenes contenidas.
 
+![img3](https://github.com/memoodm/tallerMVA/blob/master/images/img03.png)
+
 ### DEC004 Dispatcher usado en el API
 Problema: Cuando el sistema usa servicios distribuidos sobre una red, un cliente debe poder usar un servicio independiente de la locación del proveedor del servicio
 Solución: el componente dispatcher actua como una capa intermedia entre cliente y servidor implementando una serie de servcio que permite a los clientes referenciar a los servidores por nombres en vez de locaciones físicas
+
+![img4](https://github.com/memoodm/tallerMVA/blob/master/images/img04.png)
 
 ### DEC005 Uso de Domain Inventory
 Problema: Establecer un inventario de servicios único en las empresas puede ser inmanejable
 Solución: Los servicios pueden ser agrupados en inventarios de servicios específicos que pueden ser estandarizados y gobernados independientemente
 
+![img5](https://github.com/memoodm/tallerMVA/blob/master/images/img05.png)
+
 ### DEC006 Uso de RAML para la definición del contrato
 Problema: Como construir todo un API rápidamente y ver exactamente como se ve y probarlo
 Solución: RAML permite usar un formato genérico y entendible que permite a cualquiera ver la documentación de los cambios.
+
+![img6](https://github.com/memoodm/tallerMVA/blob/master/images/img06.png)
+
+### DEC007 REST como servicio único interno
+Problema: Como se pueden proveer estándares entre sistemas en la web haciendo mas fácil la comunicación entre ellos?
+Solución: Usando REST se pueden implementar cliente y servidor independientemente sin que estos se conozcan entre si.
+
+![img7](https://github.com/memoodm/tallerMVA/blob/master/images/img07.png)
+
 
   
 # 2. Artefactos del proyecto
